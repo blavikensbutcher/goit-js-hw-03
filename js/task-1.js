@@ -1,5 +1,5 @@
 const slugify = title => {
-  return String(title).toLowerCase().replaceAll(' ', '-');
+  return String(title.trim()).toLowerCase().replaceAll(' ', '-');
 };
 
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
